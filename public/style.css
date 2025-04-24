@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+.footer-gotico {
+  background-color: #000;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 3px solid #444;
+}
+
+.footer-gotico p {
+  font-family: 'UnifrakturCook', cursive;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+}
+
+.main-parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('images/Burton.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.3; /* Puedes ajustar la opacidad */
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6); /* Oscurece el fondo para mejor contraste */
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+/* Estilos generales */
+.gothic-hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.gothic-hr-center {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+/* Contenedor del parallax */
+.parallax-container {
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
+  }
+  
+  /* Video de fondo */
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el fondo */
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+  }
+  
+  /* Contenido que va sobre el video */
+  .content {
+    position: relative;
+    color: white; /* O cualquier color que resalte sobre el video */
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    z-index: 1;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  /* Estilos del body */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra todo el texto */
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.5rem;
+    border-bottom: 3px solid #444;
+  }
+  
+  /* Contenedor principal */
+  main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Titulares */
+  h1, h2 {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Secciones */
+  main h2 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Listas */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+  
+  /* Ítem de personaje centrado */
+  .personaje-item {
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  /* Imagen del personaje */
+  .personaje-item img {
+    width: 150px;  /* Aumenta el tamaño de la imagen */
+    height: 150px; /* Aumenta el tamaño de la imagen */
+    object-fit: cover;
+  }
+  
+  /* Nombre del personaje */
+  .personaje-item .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Input centrado */
+  .personaje-item input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Botón */
+  .personaje-item button {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .personaje-item button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+  }
+  
+  /* Responsive para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 0 1rem;
+    }
+  
+    header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .personaje-item img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .personaje-item input,
+    .personaje-item button {
+      max-width: 100%;
+    }
+  }
+  
